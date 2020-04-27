@@ -33,7 +33,7 @@
         "vnetIngressSubnetName": "snet-clusteringressservices",
         "vnetIngressSubnetAddressSpace": "10.240.4.0/28",
         "vnetGatewaySubnetName": "snet-applicationgateways",
-        "vnetGatewaySubnetAddressSpace": "10.240.18.0/28",
+        "vnetGatewaySubnetAddressSpace": "10.240.4.16/28",
         "routeTableName": "[concat('route-', variables('clusterVNetName'), '-clusternodes-to-hub')]",
         "hubRgName": "[split(parameters('hubVnetResourceId'),'/')[4]]",
         "hubNetworkName": "[split(parameters('hubVnetResourceId'),'/')[8]]",

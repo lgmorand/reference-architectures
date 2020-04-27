@@ -27,7 +27,7 @@
     "variables": {
         "orgAppId": "BU0001A0008",
         "clusterVNetName": "[concat('vnet-hub-spoke-', variables('orgAppId'), '-00')]",
-        "vnetAddressSpace": "10.240.0.0/19",
+        "vnetAddressSpace": "10.240.0.0/16",
         "vnetNodepoolSubnetName": "snet-system-clusternodes",
         "vnetNodepoolSubnetAddressSpace": "10.240.16.0/24",
         "vnetUserNodepoolSubnetName": "snet-user-clusternodes",

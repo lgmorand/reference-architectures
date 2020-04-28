@@ -36,7 +36,7 @@ az deployment group create --resource-group rg-enterprise-networking-hubs --temp
 az deployment group create --resource-group rg-enterprise-networking-spokes --template-file spoke-BU0001A0008.json --parameters location=eastus2 hubVnetResourceId="/subscriptions/[subscription id]/resourceGroups/rg-enterprise-networking-hubs/providers/Microsoft.Network/virtualNetworks/vnet-eastus2-hub"
 
 # The spoke creation will emit the following:
-# * nodepoolSubnetResourceIds - An array containing the subnet Ids of the AKS system nodepools in the spoke
+# * nodepoolSubnetResourceIds - An array containing the subnet Ids of the AKS nodepools in the spoke
 #           - E.g. ["/subscriptions/[subscription id]/resourceGroups/rg-enterprise-networking-spokes/providers/Microsoft.Network/virtualNetworks/vnet-hub-spoke-BU0001A0008-00/subnets/snet-clusternodes"]
 # * clusterVnetResourceId - The Resource ID of the vnet that the cluster will land in
 #           - E.g. /subscriptions/[subscription id]/resourceGroups/rg-enterprise-networking-spokes/providers/Microsoft.Network/virtualNetworks/vnet-hub-spoke-BU0001A0008-00
